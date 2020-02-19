@@ -3,11 +3,17 @@
 one:
   title: MyString
   description: MyText
-  image_url: MyString
+  image_url: seed/lorem.jpg
   price: 9.99
 
 two:
-  title: MyString
+  title: MyString2
   description: MyText
-  image_url: MyString
+  image_url: seed/lorem.jpg
   price: 9.99
+
+mockingbird:
+  title: To Kill a Mockingbird
+  description: by Harper Lee. Published in 1960, this timeless classic explores...
+  price: 22.50
+  image_url: seed/mockingbird.jpg
