@@ -1,0 +1,25 @@
+<% if notice %>
+  <aside id="notice"><%= notice %></aside>
+<% end %>
+
+<section>
+  <h1>Classic Must Reads Books</h1>
+
+  <div class="catalog">
+    <% @products.each do |product| %>
+      <div class="product-wrapper">
+        <div class="product-image-wrapper">
+          <%= image_tag(product.image_url) %>
+        </div>
+        <h2><%= product.title %></h2>
+        <p>
+          <%= sanitize(product.description) %>
+        </p>
+        <div class="price">
+          <%= product.price %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>
+
